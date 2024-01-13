@@ -39,10 +39,11 @@ export default function App() {
     <div>
       {session ? (
         // User is logged in
-        <div>
-          <p>Welcome, {session.user.email}!</p>
-          <button onClick={() => supabase.auth.signOut()}>Sign out</button>
-        </div>
+        window.location.href = '/Users/reethu/coding/Projects/eRecruitment/frontend/recruiter.html'
+        // <div>
+        //   <p>Welcome, {session.user.email}!</p>
+        //   <button onClick={() => supabase.auth.signOut()}>Sign out</button>
+        // </div>
       ) : (
         // User is not logged in, show authentication UI
         <Auth supabaseClient={supabase} appearance={{ theme: ThemeSupa }}  providers={["google"]}/>
