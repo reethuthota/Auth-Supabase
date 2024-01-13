@@ -39,7 +39,7 @@ export default function App() {
     <div>
       {session ? (
         // User is logged in
-        window.location.href = '/Users/reethu/coding/Projects/eRecruitment/frontend/recruiter.html'
+        window.location.href = 'https://recruiter-theta.vercel.app/'
         // <div>
         //   <p>Welcome, {session.user.email}!</p>
         //   <button onClick={() => supabase.auth.signOut()}>Sign out</button>
